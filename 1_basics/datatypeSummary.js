@@ -12,7 +12,7 @@ const num= 100.97
 let userEmail;
 const id= Symbol("1234")
 const anId= Symbol("1234")
-console.log(id===anId);
+// console.log(id===anId);
 const bigNumber= 3827893797497n
 
 //Dynamic Type Language
@@ -29,5 +29,33 @@ let myObj={
 }
 
 const myfunc= function(){
-    console.log("hello");
+    // console.log("hello");
 }
+
+//********************************************************************** */
+
+//Stack and Heap Memory 
+/*
+Stack => Primitive      copy value mein change hoga
+Heap => Non Primitive   original value mein change hoga
+*/
+let myYoutube= "karanjalal"
+let anotherName= myYoutube
+
+anotherName= "chaiaurcode"
+console.log(anotherName);
+console.log(myYoutube);
+
+// Heap (Non Primitive Type)
+let userOne= {
+    name: "Karan Jalal",
+    upi: "karanjalal@okrbi"
+
+}
+
+let userTwo= userOne
+
+userTwo.name = "Ritik"
+
+console.log(userTwo.name);
+console.log(userOne.name);
