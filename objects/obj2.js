@@ -39,10 +39,30 @@ const user= [
 
 // console.log(user[1].email);
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));  // it will tell us about if the object has the property in it or not
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));  // it will tell us about if the object has the property in it or not
+
+
+//destructuring
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseteacher: "Hitesh Sir",
+}
+
+//to fetch values from the object we can use another syntax just than the "."
+const {courseteacher : prof}= course
+//console.log(courseteacher);
+
+console.log(prof);
+
+// {
+//     "name": "karan",
+//     "price": "free"
+// }
